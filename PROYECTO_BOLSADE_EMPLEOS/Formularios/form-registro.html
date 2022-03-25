@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dawn</title>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/index.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand me-2" href="#da1"> Dawn </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="#no2">Nosotros</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Empleos
+                        </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item">Categorias</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#d1">Disenador</a></li>
+                        <li><a class="dropdown-item" href="#p2">Programador</a></li>
+                        <li><a class="dropdown-item" href="#a3">Analista</a></li>
+                        <li><a class="dropdown-item" href="#d4">Desarrollador</a></li>
+                        <li><a class="dropdown-item" href="#d5">Director </a></li>
+                        <li><a class="dropdown-item" href="#i6">Ingeniero</a></li>
+                        <li><a class="dropdown-item" href="#g7">Gerente</a></li>
+                    </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#co3">Contacto</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item dropdown dropstart">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Cuenta
+                        </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item disabled" href="http://127.0.0.1:5500/formulario-registro.html">Registro</a></li>
+                        <li><a class="dropdown-item disabled" href="http://127.0.0.1:5500/formulario-ingreso.html">Ingreso</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="http://127.0.0.1:5500/formulario-ingreso.html">Administrador</a></li>
+                    </ul>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="jumbotron">
+        <div class="container">
+            <h1 class="titulo"> Dawn </h1>
+            <p> Pagina de Empleos Tecnologicos </p>
+        </div>
+    </section>
+
+    <nav class="navbar navbar-light bg-light">
+        <div class="container main">
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn btn-outline-primary" type="submit"><i class="bi bi-search"></i>Buscar</button>
+            </form>
+            <a href="#">
+                <button class="btn btn-outline-success" type="submit "> Anuncie su trabajo</button>
+            </a>
+        </div>
+    </nav>
+
+    <section class="main container">
+        <form class=" g-3">
+            <div class="col-md-2 main">
+                <select class="form-select" required aria-label="select example">
+                    <option value="">Categorias</option>
+                    <option value="1">Disenador</option>
+                    <option value="2">Programador</option>
+                    <option value="3">Analista</option>
+                    <option value="4">Desarrollador</option>
+                    <option value="5">Director</option>
+                    <option value="6">Ingeniero</option>
+                    <option value="7">Gerente</option>
+                </select>
+                <div class="invalid-feedback">Example invalid select feedback</div>
+            </div>
+            <div class="form-check form-check-inline main ">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                <label class="form-check-label" for="inlineRadio1"> Tiempo Completo </label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2"> Medio Tiempo </label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                <label class="form-check-label" for="inlineRadio3"> Desde Casa </label>
+            </div>
+            <div class="col-9 main">
+                <label for="inputAddress" class="form-label"> Empresa </label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="">
+            </div>
+            <div class="col-md-9 main">
+                <label for="inputAddress2" class="form-label"> Logo </label>
+                <input type="file" class="form-control" aria-label="file example" required>
+                <div class="valid-feedback">Example invalid form file feedback</div>
+            </div>
+            <div class="col-9 main">
+                <label for="inputAddress2" class="form-label"> URL </label>
+                <input type="link" class="form-control" id="inputAddress2" placeholder="">
+            </div>
+            <div class="col-md-9 main">
+                <label for="inputEmail4" class="form-label"> Posicion </label>
+                <input type="text" class="form-control" id="inputEmail4">
+            </div>
+            <div class="col-md-9 main ">
+                <label for="inputCity" class="form-label"> Localizacion </label>
+                <input type="text" class="form-control" id="inputCity">
+            </div>
+            
+            <div class="col-12 main">
+                <button type="submit" class="btn btn-primary"> Registro </button>
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6">
+                    <p> Eliseo </p>
+                </div>
+                <div class="col-xs-6">
+                    <ul class="list-inline justify">
+                        <il><a href="#"> Inicio </a></il>
+                        <il><a href="#"> Nosotros </a></il>
+                        <il><a href="#"> Contacto </a></il>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="JS/bootstrap.min.js"></script>
+    <script src="JS/index.js"></script>
+</body>
+</html>

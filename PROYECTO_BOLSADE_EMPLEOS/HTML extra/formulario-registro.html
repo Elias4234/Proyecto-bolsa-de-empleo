@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dawn</title>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/index.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand me-2" href="#"> Dawn </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Nosotros</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Empleos
+                        </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Categorias</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Disenador</a></li>
+                        <li><a class="dropdown-item" href="#">Programador</a></li>
+                        <li><a class="dropdown-item" href="#">Analista</a></li>
+                        <li><a class="dropdown-item" href="#">Desarrollador</a></li>
+                        <li><a class="dropdown-item" href="#">Director </a></li>
+                        <li><a class="dropdown-item" href="#">Ingeniero</a></li>
+                        <li><a class="dropdown-item" href="#">Gerente</a></li>
+                    </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Contacto</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item dropdown dropstart">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Cuenta
+                        </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item disabled" href="http://127.0.0.1:5500/formulario-registro.html">Registro</a></li>
+                        <li><a class="dropdown-item disabled" href="http://127.0.0.1:5500/formulario-ingreso.html">Ingreso</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="http://127.0.0.1:5500/formulario-ingreso.html">Administrador</a></li>
+                    </ul>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="jumbotron">
+        <div class="container">
+            <h1 class="titulo"> Dawn </h1>
+            <p> Pagina de Empleos Tecnologicos </p>
+        </div>
+    </section>
+
+    <section class="main container">
+        <form class="row g-3">
+            <div class="col-12">
+                <label for="inputAddress" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="Nombre">
+            </div>
+            <div class="col-12">
+                <label for="inputAddress2" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Apellido">
+            </div>
+            <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Correo</label>
+                <input type="email" class="form-control" id="inputEmail4">
+            </div>
+            <div class="col-md-6">
+                <label for="inputCity" class="form-label">Nombre de usuario</label>
+                <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">Clave</label>
+                <input type="password" class="form-control" id="inputPassword4">
+            </div>
+            <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">Confirmar Clave</label>
+                <input type="password" class="form-control" id="inputPassword4">
+            </div>
+            <div class="col-md-6">
+                <label for="inputCity" class="form-label">Ciudad</label>
+                <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="col-md-6">
+                <label for="inputState" class="form-label">Pais</label>
+                <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary"> Registro </button>
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6">
+                    <p> Eliseo </p>
+                </div>
+                <div class="col-xs-6">
+                    <ul class="list-inline text-right">
+                        <il><a href="#"> Inicio </a></il>
+                        <il><a href="#"> Nosotros </a></il>
+                        <il><a href="#"> Contacto </a></il>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="JS/bootstrap.min.js"></script>
+    <script src="JS/index.js"></script>
+</body>
+</html>

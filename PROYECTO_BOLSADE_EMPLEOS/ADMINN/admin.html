@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://kit.fontawesome.com/7836eec0e0.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+    <link rel="stylesheet" href="estilo.css" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <section id="menu">
+        <div class="logo">
+            <img src="background-images-for-login-page3bc68c53b0db224b.jpg " alt="" />
+            <h2>Administrador</h2>
+        </div>
+
+        <div class="items">
+            <li><i class="fad fa-chart-pie-alt"></i><a href="#"></a></li>
+            <li><i class="fad fa-chart-pie-alt"></i><a href="#"></a></li>
+            <li><i class="fad fa-chart-pie-alt"></i><a href="#"></a></li>
+            <li><i class="fad fa-chart-pie-alt"></i><a href="#"></a></li>
+            <li><i class="fad fa-chart-pie-alt"></i><a href="#"></a></li>
+        </div>
+    </section>
+
+    <section id="interface">
+        <div class="navigation">
+            <div class="n1">
+                <div>
+                    <i class="fa fa-bars" id="menu-btn"></i>
+                </div>
+                <div class="search">
+                    <i class="fa fa-search"></i>
+                    <input type="text" placeholder="Buscar" class="filter" id="filter" onkeyup="searchBlog()" />
+                </div>
+            </div>
+            <div class="profile">
+                <i class="fa fa-bell"></i>
+                <img src="user.jpg" />
+            </div>
+        </div>
+        <h3 class="i-name">
+            Tablero
+        </h3>
+
+        <dir class="board">
+            <table width="100%" id="tableRecord">
+                <thead>
+                    <tr>
+                        <td>Localizacion</td>
+                        <td>Puesto</td>
+                        <td>Estado</td>
+                        <td>Compañia</td>
+                        <td></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="product">
+                        <td class="people">
+
+                            <div class="people-de">
+                                <h5>Madrid, España</h5>
+                                <p></p>
+                            </div>
+                        </td>
+
+                        <td class="people-des">
+                            <h5>Diseñador</h5>
+                            <p>Web designer</p>
+                        </td>
+
+                        <td class="active">
+                            <p>Active</p>
+                        </td>
+
+                        <td class="role">
+                            <p>@mdo</p>
+                        </td>
+
+                        <td class="edit"><a href="#">Borrar</a></td>
+                    </tr>
+                    <tr class="product">
+                        <td class="people">
+
+                            <div class="people-de">
+                                <h5>Madrid, España</h5>
+                                <p></p>
+                            </div>
+                        </td>
+
+                        <td class="people-des">
+                            <h5>Diseñador</h5>
+                            <p>Web designer</p>
+                        </td>
+
+                        <td class="active">
+                            <p>Active</p>
+                        </td>
+
+                        <td class="role">
+                            <p>@fat</p>
+                        </td>
+
+                        <td class="edit"><a href="#">Borrar</a></td>
+                    </tr>
+                    <tr class="product">
+                        <td class="people">
+
+                            <div class="people-de">
+                                <h5>Paris, Francia</h5>
+                                <p></p>
+                            </div>
+                        </td>
+
+                        <td class="people-des">
+                            <h5>Diseñador</h5>
+                            <p>Web designer</p>
+                        </td>
+
+                        <td class="active">
+                            <p>Active</p>
+                        </td>
+
+                        <td class="role">
+                            <p>@Twitter</p>
+                        </td>
+
+                        <td class="edit"><a href="#">Borrar</a></td>
+                    </tr>
+                    <tr class="product">
+                        <td class="people">
+
+                            <div class="people-de">
+                                <h5>Paris, Francia</h5>
+                                <p></p>
+                            </div>
+                        </td>
+
+                        <td class="people-des">
+                            <h5>Programador</h5>
+                            <p>Web dev</p>
+                        </td>
+
+                        <td class="active">
+                            <p>Active</p>
+                        </td>
+
+                        <td class="role">
+                            <p>@mdo</p>
+                        </td>
+
+                        <td class="edit"><a href="#">Borrar</a></td>
+                    </tr>
+                    <tr class="product">
+                        <td class="people">
+
+                            <div class="people-de">
+                                <h5>Barcelona, España</h5>
+                                <p></p>
+                            </div>
+                        </td>
+
+                        <td class="people-des">
+                            <h5>Programador</h5>
+                            <p>Web dev</p>
+                        </td>
+
+                        <td class="active">
+                            <p>Active</p>
+                        </td>
+
+                        <td class="role">
+                            <p>@fat</p>
+                        </td>
+
+                        <td class="edit"><a href="#">Borrar</a></td>
+                    </tr>
+                    <tr class="product">
+                        <td class="people">
+
+                            <div class="people-de">
+                                <h5>Barcelona, España</h5>
+                                <p></p>
+                            </div>
+                        </td>
+
+                        <td class="people-des">
+                            <h5>Programador</h5>
+                            <p>Tester</p>
+                        </td>
+
+                        <td class="active">
+                            <p>Active</p>
+                        </td>
+
+                        <td class="role">
+                            <p>@Twitter</p>
+                        </td>
+
+                        <td class="edit"><a href="#">Borrar</a></td>
+                    </tr>
+                    <tr class="product">
+                        <td class="people">
+
+                            <div class="people-de">
+                                <h5>Barcelona, España</h5>
+                                <p></p>
+                            </div>
+                        </td>
+
+                        <td class="people-des">
+                            <h5>Analista</h5>
+                            <p></p>
+                        </td>
+
+                        <td class="active">
+                            <p>Active</p>
+                        </td>
+
+                        <td class="role">
+                            <p>@mdo</p>
+                        </td>
+
+                        <td class="edit"><a href="#">Borrar</a></td>
+                    </tr>
+                    <tr class="product">
+                        <td class="people">
+                            <img src="" alt="" />
+                            <div class="people-de">
+                                <h5>Jacob Thornton</h5>
+                                <p></p>
+                            </div>
+                        </td>
+
+                        <td class="people-des">
+                            <h5>Analista</h5>
+                            <p></p>
+                        </td>
+
+                        <td class="active">
+                            <p>Active</p>
+                        </td>
+
+                        <td class="role">
+                            <p>@fat</p>
+                        </td>
+
+                        <td class="edit"><a href="#">Borrar</a></td>
+                    </tr>
+                    <tr class="product">
+                        <td class="people">
+                            <img src="" alt="" />
+                            <div class="people-de">
+                                <h5>Larry the Bird</h5>
+                                <p></p>
+                            </div>
+                        </td>
+
+                        <td class="people-des">
+                            <h5>Analista</h5>
+                            <p></p>
+                        </td>
+
+                        <td class="active">
+                            <p>Active</p>
+                        </td>
+
+                        <td class="role">
+                            <p>@Twitter</p>
+                        </td>
+
+                        <td class="edit"><a href="#">Borrar</a></td>
+                    </tr>
+                    <tr class="product">
+                        <td class="people">
+                            <img src="" alt="" />
+                            <div class="people-de">
+                                <h5>Mark Otto</h5>
+                                <p></p>
+                            </div>
+                        </td>
+
+                        <td class="people-des">
+                            <h5>Desarrollador</h5>
+                            <p></p>
+                        </td>
+
+                        <td class="active">
+                            <p>Active</p>
+                        </td>
+
+                        <td class="role">
+                            <p>@mdo</p>
+                        </td>
+
+                        <td class="edit"><a href="#">Borrar</a></td>
+                    </tr>
+                    <tr class="product">
+                        <td class="people">
+                            <img src="" alt="" />
+                            <div class="people-de">
+                                <h5>Jacob Thornton</h5>
+                                <p></p>
+                            </div>
+                        </td>
+
+                        <td class="people-des">
+                            <h5>Desarrollador</h5>
+                            <p></p>
+                        </td>
+
+                        <td class="active">
+                            <p>Active</p>
+                        </td>
+
+                        <td class="role">
+                            <p>@fat</p>
+                        </td>
+
+                        <td class="edit"><a href="#">Borrar</a></td>
+                    </tr>
+                    <tr class="product">
+                        <td class="people">
+                            <img src="" alt="" />
+                            <div class="people-de">
+                                <h5>Larry the Bird</h5>
+                                <p></p>
+                            </div>
+                        </td>
+
+                        <td class="people-des">
+                            <h5>Desarrollador</h5>
+                            <p></p>
+                        </td>
+
+                        <td class="active">
+                            <p>Active</p>
+                        </td>
+
+                        <td class="role">
+                            <p>@Twitter</p>
+                        </td>
+
+                        <td class="edit"><a href="#">Borrar</a></td>
+                    </tr>
+                    <tr class="product">
+                        <td class="people">
+                            <img src="" alt="" />
+                            <div class="people-de">
+                                <h5>Mark Otto</h5>
+                                <p></p>
+                            </div>
+                        </td>
+
+                        <td class="people-des">
+                            <h5>Director</h5>
+                            <p>Director Ejecutivo</p>
+                        </td>
+
+                        <td class="active">
+                            <p>Active</p>
+                        </td>
+
+                        <td class="role">
+                            <p>@mdo</p>
+                        </td>
+
+                        <td class="edit"><a href="#">Borrar</a></td>
+                    </tr>
+                    <tr class="product">
+                        <td class="people">
+                            <img src="" alt="" />
+                            <div class="people-de">
+                                <h5>Jacob Thornton</h5>
+                                <p></p>
+                            </div>
+                        </td>
+
+                        <td class="people-des">
+                            <h5>Director</h5>
+                            <p></p>
+                        </td>
+
+                        <td class="active">
+                            <p>Active</p>
+                        </td>
+
+                        <td class="role">
+                            <p>@fat</p>
+                        </td>
+
+                        <td class="edit"><a href="#">Borrar</a></td>
+                    </tr>
+                    <tr class="product">
+                        <td class="people">
+                            <img src="" alt="" />
+                            <div class="people-de">
+                                <h5>Larry the Bird</h5>
+                                <p></p>
+                            </div>
+                        </td>
+
+                        <td class="people-des">
+                            <h5>Director</h5>
+                            <p></p>
+                        </td>
+
+                        <td class="active">
+                            <p>Active</p>
+                        </td>
+
+                        <td class="role">
+                            <p>@Twitter</p>
+                        </td>
+
+                        <td class="edit"><a href="#">Borrar</a></td>
+                    </tr>
+                    <tr class="product">
+                        <td class="people">
+                            <img src="" alt="" />
+                            <div class="people-de">
+                                <h5>Mark Otto</h5>
+                                <p></p>
+                            </div>
+                        </td>
+
+                        <td class="people-des">
+                            <h5>Ingeniero</h5>
+                            <p>Ingeniero en Sistemas</p>
+                        </td>
+
+                        <td class="active">
+                            <p>Active</p>
+                        </td>
+
+                        <td class="role">
+                            <p>@mdo</p>
+                        </td>
+
+                        <td class="edit"><a href="#">Borrar</a></td>
+                    </tr>
+                    <tr class="product">
+                        <td class="people">
+                            <img src="" alt="" />
+                            <div class="people-de">
+                                <h5>Jacob Thornton</h5>
+                                <p></p>
+                            </div>
+                        </td>
+
+                        <td class="people-des">
+                            <h5>Ingeniero</h5>
+                            <p>Ingeniero en Software</p>
+                        </td>
+
+                        <td class="active">
+                            <p>Active</p>
+                        </td>
+
+                        <td class="role">
+                            <p>@fat</p>
+                        </td>
+
+                        <td class="edit"><a href="#">Borrar</a></td>
+                    </tr>
+                    <tr class="product">
+                        <td class="people">
+                            <img src="" alt="" />
+                            <div class="people-de">
+                                <h5>Larry the Bird</h5>
+                                <p></p>
+                            </div>
+                        </td>
+
+                        <td class="people-des">
+                            <h5>Ingeniero</h5>
+                            <p>Ingeniero en Mecatronica</p>
+                        </td>
+
+                        <td class="active">
+                            <p>Active</p>
+                        </td>
+
+                        <td class="role">
+                            <p>@Twitter</p>
+                        </td>
+
+                        <td class="edit"><a href="#">Borrar</a></td>
+                    </tr>
+                    <tr class="product">
+                        <td class="people">
+                            <img src="" alt="" />
+                            <div class="people-de">
+                                <h5>Mark Otto</h5>
+                                <p></p>
+                            </div>
+                        </td>
+
+                        <td class="people-des">
+                            <h5>Gerente</h5>
+                            <p></p>
+                        </td>
+
+                        <td class="active">
+                            <p>Active</p>
+                        </td>
+
+                        <td class="role">
+                            <p>@mdo</p>
+                        </td>
+
+                        <td class="edit"><a href="#">Borrar</a></td>
+                    </tr>
+                    <tr class="product">
+                        <td class="people">
+                            <img src="" alt="" />
+                            <div class="people-de">
+                                <h5>Jacob Thornton</h5>
+                                <p></p>
+                            </div>
+                        </td>
+
+                        <td class="people-des">
+                            <h5>Gerente</h5>
+                            <p></p>
+                        </td>
+
+                        <td class="active">
+                            <p>Active</p>
+                        </td>
+
+                        <td class="role">
+                            <p>@fat</p>
+                        </td>
+
+                        <td class="edit"><a href="#">Borrar</a></td>
+                    </tr>
+                    <tr class="product">
+                        <td class="people">
+                            <img src="" alt="" />
+                            <div class="people-de">
+                                <h5>Larry the Bird</h5>
+                                <p></p>
+                            </div>
+                        </td>
+
+                        <td class="people-des">
+                            <h5>Gerente</h5>
+                            <p></p>
+                        </td>
+
+                        <td class="active">
+                            <p>Active</p>
+                        </td>
+
+                        <td class="role">
+                            <p>@Twitter</p>
+                        </td>
+
+                        <td class="edit"><a href="#">Borrar</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </dir>
+    </section>
+    <script src="app.js"></script>
+</body>
+
+</html>
